@@ -1,0 +1,81 @@
+.pricing-section {
+    padding: 60px 20px;
+    background: #f9fbff;
+    text-align: center;
+}
+
+.pricing-section h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #222;
+}
+
+.pricing-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pricing-card {
+    background: white;
+    padding: 40px 25px;
+    border-radius: 16px;
+    width: 280px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+}
+
+.pricing-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #0077ff;
+}
+
+.price {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 15px 0;
+    color: #222;
+}
+
+.price span {
+    font-size: 14px;
+    color: #888;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    color: #444;
+}
+
+.pricing-card ul li {
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #0077ff;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #005ad3;
+}
+
+.highlight {
+    background: #e0f0ff;
+    border: 2px solid #0077ff;
+}
