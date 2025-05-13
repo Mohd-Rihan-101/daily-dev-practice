@@ -1,0 +1,76 @@
+.faq-section {
+  padding: 60px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.faq-section h2 {
+  font-size: 36px;
+  color: #222;
+  margin-bottom: 40px;
+}
+
+.accordion {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.accordion-item {
+  background: #f5f5f5;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.accordion-item input[type="checkbox"] {
+  display: none;
+}
+
+.accordion-item label {
+  display: block;
+  padding: 18px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  background: #e0eaff;
+  transition: background 0.3s ease;
+}
+
+.accordion-item label:hover {
+  background: #d0dfff;
+}
+
+.accordion-item label::after {
+  content: '+';
+  position: absolute;
+  right: 20px;
+  font-size: 24px;
+  color: #333;
+  transition: transform 0.3s ease;
+}
+
+.accordion-item input:checked + label::after {
+  content: '-';
+  transform: rotate(180deg);
+}
+
+.accordion-item .content {
+  max-height: 0;
+  overflow: hidden;
+  background: #ffffff;
+  transition: max-height 0.4s ease;
+  padding: 0 20px;
+}
+
+.accordion-item input:checked ~ .content {
+  max-height: 200px;
+  padding: 15px 20px 20px;
+}
+
+.accordion-item .content p {
+  margin: 0;
+  color: #444;
+}
