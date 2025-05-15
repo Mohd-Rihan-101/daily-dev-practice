@@ -1,0 +1,130 @@
+.footer-unique {
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: #f0f0f0;
+  font-family: 'Poppins', sans-serif;
+  padding: 60px 20px 30px;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.footer-about, .footer-links, .footer-contact, .footer-social {
+  flex: 1 1 220px;
+  min-width: 220px;
+}
+
+.footer-about h3,
+.footer-links h3,
+.footer-contact h3,
+.footer-social h3 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 8px;
+}
+
+.footer-about p {
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 12px;
+}
+
+.footer-links ul li a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #ffd700;
+}
+
+.footer-contact p {
+  margin: 8px 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.footer-social .social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  background: #fff;
+  color: #1f1c2c;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.social-icon:hover {
+  background: #ffd700;
+  color: #1f1c2c;
+  transform: scale(1.2);
+}
+
+.social-icon.facebook:hover {
+  background: #3b5998;
+  color: #fff;
+}
+
+.social-icon.twitter:hover {
+  background: #1da1f2;
+  color: #fff;
+}
+
+.social-icon.instagram:hover {
+  background: #e1306c;
+  color: #fff;
+}
+
+.social-icon.linkedin:hover {
+  background: #0077b5;
+  color: #fff;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #ccc;
+  font-style: italic;
+  letter-spacing: 0.6px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
